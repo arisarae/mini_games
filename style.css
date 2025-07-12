@@ -73,6 +73,10 @@ p {
   border: transparent;
 }
 
+.msgContainer button:active {
+  transform: translate(0,10px);
+}
+
 button {
   font-family: 'Press Start 2P', monospace;
 }

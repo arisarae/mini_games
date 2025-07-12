@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+  height: 100%;
+}
+.TicTacToe {
+  height: 385px;
+  width: 385px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.box {
+  height: 125px;
+  width: 125px;
+  font-size: 96px;
+  background-color: #faf7ef;
+  border: none;
+}
+
+.newGame {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background: #191913;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+}
+.hide {
+  display: none;
+}

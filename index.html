@@ -9,33 +9,38 @@
 </head>
 
 <body>
-  <section class="msg-container">
-    <div class="startGame">
-      <button class="newGame" onclick="resetGame()">Play!</button>
-    </div>
-    <div class="inGame hide">
-      <div>Player 1</div>
-      <div>Player 2</div>
-      <button class="newGame" onclick="resetGame()">Restart Game</button>
-    </div>
-    <div class="gameover hide">
-      <p id="winner"></p>
-      <button class="newGame" onclick="resetGame()">Restart Game</button>
-    </div>
-  </section>
-  <section class="TicTacToe">
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
-    <button class="box" disabled="true" onclick="addPin(this)"></button>
+  <section id="bgImage"></section>
+  <h1>Tic, Tac, Game!</h1>
+  <section id="gameScreen">
+    <section class="msgContainer">
+      <div class="startGame">
+        <button class="newGame" onclick="resetGame()">Play!</button>
+      </div>
+      <div class="inGame hide">
+        <p><span class="playerLabel">Player 1 </span><span id="O">O</span></p>
+        <p><span class="playerLabel">Player 2 </span><span id="X">X</span></p>
+        <button class="newGame" onclick="resetGame()">Restart Game</button>
+      </div>
+      <div class="gameover hide">
+        <p id="winner"></p>
+        <button class="newGame" onclick="resetGame()">Restart Game</button>
+      </div>
+    </section>
+    <section class="TicTacToe hide">
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+      <button class="box" disabled="true" onclick="addPin(this)"></button>
+    </section>
+
   </section>
   <script src="./script.js">
-    
+
   </script>
 </body>
 

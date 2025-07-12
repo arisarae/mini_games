@@ -1,5 +1,7 @@
 let boxes = document.querySelectorAll(".box");
 let playerO = true; // Player O starts
+let message = document.querySelector(".msgContainer")
+let board = document.querySelector(".TicTacToe");
 let newGame = document.querySelector(".newGame");
 let startGame = document.querySelector(".startGame");
 let inGame = document.querySelector(".inGame");
@@ -18,8 +20,8 @@ const winPatterns = [
 ];
 
 const addPin = (box) => {
-  box.innerText = isPlayerO ? "O" : "X";
-  box.style.color = isPlayerO ? "blue" : "red";
+  box.innerText = playerO ? "O" : "X";
+  box.style.color = playerO ? "#0EB7D0" : "#F5719D";
   box.disabled = true;
   checkWinner();
   playerO = !playerO
@@ -71,6 +73,8 @@ const resetGame = () => {
     box.disabled = false;
     box.innerText = "";
   }
+  message.style.width = "330px"
+  board.classList.remove("hide")
   startGame.classList.add("hide");
   inGame.classList.remove("hide")
   gameOver.classList.add("hide");

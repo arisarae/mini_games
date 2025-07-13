@@ -18,26 +18,37 @@ body {
   left: 0;
   right: 0;
   height: 100vh;
-  background: url(./assets/background.svg) center top no-repeat;
+  background: url(./assets/background2.svg) center top no-repeat;
   background-size: auto 100%;
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+.yellow {
+  color: #FEE542;
+  text-shadow: -5px -5px 0 #F7A431, 5px -5px 0 #F7A431, -5px 5px 0 #F7A431, 5px 5px 0 #F7A431;
+}
+.orange {
   color: #F7A431;
   text-shadow: -5px -5px 0 #E35D8C, 5px -5px 0 #E35D8C, -5px 5px 0 #E35D8C, 5px 5px 0 #E35D8C;
-  text-align: center;
-  margin-top: 6vh;
+}
+.pink {
+  color: #E35D8C;
+  text-shadow: -5px -5px 0 #0EB7D0, 5px -5px 0 #0EB7D0, -5px 5px 0 #0EB7D0, 5px 5px 0 #0EB7D0;
 }
 
 #gameScreen {
   justify-content: space-between;
   align-items: center;
-  margin-top: 26vh;
+  margin-top: 12vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 800px;
+  width: 730px;
   height: 390px;
 }
 
@@ -45,7 +56,6 @@ h1 {
 .msgContainer {
   width: 100%;
   justify-items: center;
-  gap: 3;
 }
 
 p {
@@ -68,9 +78,9 @@ p {
   color: #FEE542;
   text-shadow: -3px -3px 0 #F7A431, 3px -3px 0 #F7A431, -3px 3px 0 #F7A431, 3px 3px 0 #F7A431;
   font-size: 32px;
-  background: transparent;
+  background: none;
   margin-top: 15px;
-  border: transparent;
+  border: none;
 }
 
 .msgContainer button:active {
@@ -79,6 +89,7 @@ p {
 
 button {
   font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
 }
 
 /* Game Board */

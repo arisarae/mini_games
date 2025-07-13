@@ -73,7 +73,7 @@ const resetGame = () => {
     box.disabled = false;
     box.innerText = "";
   }
-  message.style.width = "330px"
+  message.style.width = "300px"
   board.classList.remove("hide")
   startGame.classList.add("hide");
   inGame.classList.remove("hide")

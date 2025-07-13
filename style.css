@@ -44,7 +44,7 @@ h1 {
 #gameScreen {
   justify-content: space-between;
   align-items: center;
-  margin-top: 12vh;
+  margin-top: 8%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
